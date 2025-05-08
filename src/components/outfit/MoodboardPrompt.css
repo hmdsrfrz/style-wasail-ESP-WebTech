@@ -1,0 +1,164 @@
+/* src/components/MoodboardPrompt.css */
+.moodboard-prompt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .moodboard-prompt-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .moodboard-prompt-content h2 {
+    margin: 0 0 1rem;
+    color: #5e0941;
+    font-size: 1.5rem;
+  }
+  
+  .outfit-name {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+  
+  .moodboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .moodboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .moodboard-item:hover {
+    border-color: #5e0941;
+    background-color: rgba(94, 9, 65, 0.05);
+  }
+  
+  .moodboard-item.selected {
+    border-color: #5e0941;
+    background-color: rgba(94, 9, 65, 0.1);
+  }
+  
+  .moodboard-item h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .moodboard-item p {
+    margin: 0.25rem 0 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .add-to-board-btn {
+    background-color: #5e0941;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-board-btn:hover {
+    background-color: #4a0733;
+  }
+  
+  .create-new-btn {
+    width: 100%;
+    background-color: transparent;
+    color: #5e0941;
+    border: 2px dashed #5e0941;
+    padding: 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .create-new-btn:hover {
+    background-color: rgba(94, 9, 65, 0.1);
+  }
+  
+  .create-new-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .create-new-form input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .create-new-form input[type="text"]:focus {
+    outline: none;
+    border-color: #5e0941;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cancel-btn {
+    flex: 1;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .create-btn {
+    flex: 1;
+    background-color: #5e0941;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-btn:hover {
+    background-color: #4a0733;
+  }
+  
+  .create-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
